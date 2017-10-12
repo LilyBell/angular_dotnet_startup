@@ -1,7 +1,7 @@
+# Original settings by @ciel https://www.github.com/ciel
+# Modified for use with yarn by @LilyBell https://www.github.com/LilyBell
+
 {
-    "_comment": [
-        "Original settings compiled by @ciel https://www.github.com/ciel. Modified for use with yarn by @LilyBell"
-        ],
     "rulesDirectory": [
         "node_modules/codelyzer"
     ],
