@@ -14,25 +14,25 @@ In order to make use of the Yarn package manager complete the following steps:
 choco install yarn
 ```
 
-## Step 2: Set Yarn as default package manager
+## Step 2: Install [Angular 4](https://angular.io)
+
+```
+yarn global add @angular/cli
+```
+
+## Step 3: Set Yarn as default package manager
 
 ```
 ng set --global packageManager=yarn
 ```
 
 
-## Step 3: Install [rimraf](https://github.com/isaacs/rimraf)
+## Step 4: Install [rimraf](https://github.com/isaacs/rimraf)
 
 rimraf is a package that emulates the Linux command rm -rf to avoid errors in Windows associated with deletion of non empty directories.
 
 ```
 yarn global add rimraf
-```
-
-## Step 4: Install [Angular 4](https://angular.io)
-
-```
-yarn global add @angular/cli
 ```
 
 ## Step 5: Install [Typescript](https://www.typescriptlang.org/)
