@@ -1,5 +1,7 @@
 # Javascript linting paramters
-# Settings compiled by @ciel https://www.github.com/ciel
+# Original settings compiled by @ciel https://www.github.com/ciel
+# Modified for use with yarn by @LilyBell https://www.github.com/LilyBell
+
 {
     "env": {
         "browser": true,
