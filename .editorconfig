@@ -1,5 +1,6 @@
 # Editor configuration, see http://editorconfig.org
-# Settings complied by @ciel http://www.github.com/ciel
+# Original settings complied by @ciel https://www.github.com/ciel
+# Modified for use with yarn by @LilyBell https://www.github.com/LilyBell
 [*]
 charset=utf-8
 end_of_line=crlf
