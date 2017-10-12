@@ -81,6 +81,60 @@ dotnet sln . add ./src/common/common.csproj
 dotnet sln . add ./src/client/client.csproj
 ```
 
-# Optional Steps
+## Step 12: Remove all default views and controllers (Optional)
+The purpose of this is to create a barebones application and to flush the wwwroot folder where the Angular frontend will reside.
 
+```
+mv ./src/client/appsettings.Development.json ./src/client/appsettings.dev.json
+rimraf ./src/client/wwwroot
+rimraf ./src/client/controllers
+rimraf ./src/client/models
+rimraf ./src/client/views
+rimraf ./src/client/.bowerrc
+rimraf ./src/client/bower.json
+rimraf ./src/client/bundleconfig.json
+```
+
+## Step 13: Views and Controllers
+The built in views and controllers don't work well for an Angular application. Some that work with it are supplied and need to be moved into the correct directory.
+
+```
+mv ./templates/Views ./src/client
+mv ./templates/Controllers ./src/client
+rimraf ./templates
+```
+
+## Step 14: Angular
+Navigate to the directory where you want to create your Angular frontend.
+
+```
+cd ./src/client
+```
+
+Create the Angular application in the ```./src/client/wwwroot``` folder. 
+
+```
+ng new wwwroot
+```
+
+Navigate into the Angular project
+
+```
+cd wwwroot
+```
+
+Build the Angular project
+
+```
+ngbuild
+```
+
+## Step 15: Run
+Finally the project can be run
+
+```
+cd ..
+dotnet restore
+dotnet run
+```
 
