@@ -48,11 +48,11 @@ Please include the trailing '.' as this instructs git to clone into the current 
 git clone --depth=1 https://github.com/LilyBell/angular_dotnet_startup.git .
 ```
 
-## Step 7: Delete the git repository and install npm modules
+## Step 7: Delete the git repository and install modules
 
 ```
 rimraf .git
-npm install
+yarn install
 ```
 
 ## Step 8: Create root directories
