@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title></title>
+    <base href="/">
+    <environment names="Development, Staging, Production">
+        <script defer src="dist/inline.bundle.js" asp-append-version="true"></script>
+        <script defer src="dist/polyfills.bundle.js" asp-append-version="true"></script>
+        <script defer src="dist/styles.bundle.js" asp-append-version="true"></script>
+        <script defer src="dist/vendor.bundle.js" asp-append-version="true"></script>
+        <script defer src="dist/main.bundle.js" asp-append-version="true"></script>
+    </environment>
+    <!-----------------------------------------------
+        load required fonts from google webfonts,
+        caching as possible to reduce subsequent
+        loading times.
+    ------------------------------------------------>
+    <environment names="Development, Staging, Production">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" asp-append-version="true">
+    </environment>
+    <!-----------------------------------------------
+        load up the website icon.
+    ------------------------------------------------>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    @RenderBody()
+</body>
+</html>
