@@ -1,6 +1,3 @@
-# Original settings complied by @ciel https://www.github.com/ciel
-# Modified for use with yarn by @LilyBell https://www.github.com/LilyBel;
-
 {
     "compileOnSave": false,
     "compilerOptions": {
