@@ -145,7 +145,7 @@ cd wwwroot
 Build the Angular project
 
 ```
-ngbuild
+ng build
 ```
 
 ## Step 17: Run
